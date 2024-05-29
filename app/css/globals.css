@@ -1,0 +1,86 @@
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.text-light {
+  color: #cfd6e1 !important;
+}
+
+#cloapps_nav_top * {
+  font-size: .9em !important;
+}
+
+.bg-dark {
+  background-color: #212934 !important;
+}
+
+.logo {
+  color: #59ab6e ;
+  font-weight: 600 ;
+  font-family: 'Roboto', sans-serif;
+  font-size: 48px !important;
+}
+
+#main-navbar-nav .navbar-nav {
+  max-width: 550px;
+
+}
+
+#main-navbar-nav .navbar-nav a {
+  font-size: 18px !important;
+  font-weight: 300 !important;
+}
+
+
+.aboutus {
+  background-color: #59ab6e;
+}
+
+.bg-dark {
+  background-color: #212934 !important;
+}
+
+#cloapps_footer a {
+  color: #dcdde1;
+}
+
+#cloapps_footer .border-light {
+  border-color: #2d343f !important;
+}
+
+
+#cloapps_footer .border-light {
+  border-color: #2d343f !important;
+}
+
+#cloapps_footer .btn-success {
+   background-color: #59ab6e; 
+   border-color: #56ae6c; 
+}
+
+.cloApp-carousel .carousel-item {
+  background:  #efefef!important;
+}
+
+
+.cloApp-carousel .carousel-control-next i, .cloApp-carousel .carousel-control-prev i{
+   color: #59ab6e !important; 
+   font-size: 2.8em !important; 
+}
+
+.cloApp-carousel .container {
+  height:37rem;
+}
+
+.bg-light {background-color: #e9eef5 !important;}
+
+@media (max-width: 768px) {
+  .cloApp-carousel .carousel-control-prev,
+  .cloApp-carousel .carousel-control-next,
+  .cloApp-carousel .carousel-indicators {
+    display: none;
+  }
+  .cloApp-carousel .p-5 {
+     padding: 0rem !important; 
+}
+}
