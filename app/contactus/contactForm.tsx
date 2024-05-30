@@ -5,20 +5,22 @@ import emailjs from '@emailjs/browser';
 export default function ContactForm() {
 
     const [messageSent, setMessageSent] = useState(false);
+    const [disableSend, setDisableSend] = useState(false);
     const form = useRef();
     
     const sendEmail = (e: any) => {
       e.preventDefault();
-  
+      
+      setDisableSend(true);
       emailjs
         .sendForm('service_2nf8fbc', 'template_y5tl4ho', e.target, {
           publicKey: 'h5bPoqNtkz6ExeyAE',
         })
         .then(
           () => {
-            setMessageSent(true)
+            setMessageSent(true);
             console.log('SUCCESS!');
-          },
+           },
           (error:any) => {
             console.log('FAILED...', error.text);
           },
@@ -55,7 +57,7 @@ export default function ContactForm() {
                 </div>
                 <div className="row">
                     <div className="col text-end mt-2">
-                        <button type="submit" className="btn btn-success btn-lg px-3">Let’s Talk</button>
+                        <button type="submit" className="btn btn-success btn-lg px-3" disabled={disableSend} >Let’s Talk</button>
                     </div>
                 </div>
             </form>
