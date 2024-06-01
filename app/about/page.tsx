@@ -5,7 +5,7 @@ import OurServices from "./ourServices";
 
 export const metadata: Metadata = {
   title: "CloApps - About Us",
-  description: "General infroduction about CloApps Company and its services that covers.", 
+  description: "General introduction to CloApps Company and its services.", 
 };
 
 export default function Aboutus() {

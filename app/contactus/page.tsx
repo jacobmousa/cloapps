@@ -4,7 +4,7 @@ import ContactForm from "./contactForm";
 
 export const metadata: Metadata = {
     title: "CloApps - Contact Us",
-    description: "", 
+    description: "Contact the CloaApps Team for any questions or service inquiries.", 
   };
 
 export default function ContactUs() {

@@ -10,9 +10,9 @@ export default function NavbarHeader() {
             <Navbar.Collapse id="main-navbar-nav">
             <Nav className="me-auto align-self-center navbar-collapse flex-fill d-lg-flex justify-content-lg-between  mx-lg-auto">
                 <Nav.Link href="/">Home</Nav.Link>
-                <Nav.Link href="/about/">About</Nav.Link>
+                <Nav.Link href="/about/index.html">About</Nav.Link>
                 <Nav.Link href="#">Services</Nav.Link>
-                <Nav.Link href="/contactus/">Contact Us</Nav.Link>
+                <Nav.Link href="/contactus/index.html">Contact Us</Nav.Link>
             </Nav>
             </Navbar.Collapse>  
         </Container>
