@@ -8,7 +8,7 @@ export default function ContactForm() {
     const [messageSent, setMessageSent] = useState(false);
     const [validated, setValidated] = useState(false);
     //const [disableSend, setDisableSend] = useState(false);
-    const form = useRef(null);
+    const sendForm = useRef(null);
     
     const sendEmailSubmit = (e: any) => {
         const form = e.currentTarget;
@@ -16,19 +16,28 @@ export default function ContactForm() {
             e.preventDefault();
             e.stopPropagation();
         }
+        else
+        {
+            if (sendForm.current)
+                {
+                    const send = sendForm.current.elements.namedItem('Send') as HTMLButtonElement;
+                    send.disabled = true;
+                }
+            
+            sendMail(e);
+           
+            e.preventDefault();
+            e.stopPropagation();
 
-    //setValidated(true);
-    
-    sendMail(e);
+            return;
+
+        }
+    setValidated(true);
+    //
     //setDisableSend(true);
     };
 
     const sendMail = (e:any) => {
-        if (form.current)
-        {
-            const send = form.current.elements.namedItem('Send') as HTMLButtonElement;
-            send.disabled = true;
-        }
         emailjs
             .sendForm('service_2nf8fbc', 'template_y5tl4ho', e.target, {
                 publicKey: 'h5bPoqNtkz6ExeyAE',
@@ -83,7 +92,7 @@ export default function ContactForm() {
 
             {!messageSent && 
             
-            <Form className="col-md-8 m-auto"  noValidate validated={validated} onSubmit={sendEmailSubmit} ref={form}>
+            <Form className="col-md-8 m-auto"  noValidate validated={validated} onSubmit={sendEmailSubmit} ref={sendForm}>
                 <Row className="mb-3">
                     <Form.Group as={Col} md="6" controlId="validationCustom01">
                         <Form.Label>First name</Form.Label>
@@ -93,7 +102,6 @@ export default function ContactForm() {
                             placeholder="Name"
                             defaultValue=""
                             name="user_name"
-                            id="user_name"
                         />
                         <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
                     </Form.Group>
@@ -105,7 +113,6 @@ export default function ContactForm() {
                             placeholder="Phone"
                             defaultValue=""
                             name="user_phone"
-                            id="user_phone"
                         />
                         <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
                     </Form.Group>
@@ -119,7 +126,6 @@ export default function ContactForm() {
                             placeholder="Email"
                             defaultValue=""
                             name="user_email"
-                            id="user_email"
                         />
                         <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
                     </Form.Group>
@@ -134,7 +140,6 @@ export default function ContactForm() {
                             placeholder="Message"
                             defaultValue=""
                             name="message"
-                            id="message"
                         />
                         <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
                     </Form.Group>
