@@ -8,7 +8,8 @@ export default function ContactForm() {
     const [messageSent, setMessageSent] = useState(false);
     const [validated, setValidated] = useState(false);
     //const [disableSend, setDisableSend] = useState(false);
-    const sendForm = useRef(null);
+    //const sendForm = useRef(null);
+    const sendForm = useRef<HTMLFormElement>(null);
     
     const sendEmailSubmit = (e: any) => {
         const form = e.currentTarget;
@@ -146,7 +147,7 @@ export default function ContactForm() {
                 </Row>
                 <Row>
                     <Col className="text-end">
-                        <Button type="submit" name="Send" className="btn btn-success btn-lg px-3">Let's Talk</Button>
+                        <Button type="submit" name="Send" className="btn btn-success btn-lg px-3">Let&apos;s Talk</Button>
                     </Col>               
                 </Row>
             </Form>
