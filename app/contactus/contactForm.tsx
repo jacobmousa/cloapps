@@ -2,6 +2,7 @@
 import { useRef, useState } from "react";
 import emailjs from '@emailjs/browser';
 import { Button, Col, Form, Row } from "react-bootstrap";
+import axios from "axios";
 
 export default function ContactForm() {
 
@@ -38,7 +39,30 @@ export default function ContactForm() {
     //setDisableSend(true);
     };
 
-    const sendMail = (e:any) => {
+    const sendMail = async (e:any) => {
+
+        const user_name = sendForm.current!!.elements.namedItem('user_name') as HTMLInputElement;
+        const user_phone = sendForm.current!!.elements.namedItem('user_phone') as HTMLInputElement;
+        const user_email = sendForm.current!!.elements.namedItem('user_email') as HTMLInputElement;
+        const message = sendForm.current!!.elements.namedItem('message') as HTMLInputElement;
+
+        //e.preventDefault();
+        try {
+            const response = 
+                await axios.post('https://4yf5huxfv0.execute-api.us-east-1.amazonaws.com/prod/send-email', 
+            {
+                "to": "jacobmousa@yahoo.com",
+                "subject": `Email from Site ${user_name.value}`,
+                "body": `From:${user_name.value}\nPhone:${user_phone.value}\nEmail:${user_email.value}\n${message.value}`
+            }
+            );
+            console.log('Email sent successfully:', response.data);
+            setMessageSent(true);
+        } catch (error) {
+            console.error('Error sending email:', error);
+        }
+
+        /*
         emailjs
             .sendForm('service_2nf8fbc', 'template_y5tl4ho', e.target, {
                 publicKey: 'h5bPoqNtkz6ExeyAE',
@@ -52,8 +76,8 @@ export default function ContactForm() {
                 console.log('FAILED...', error.text);
                 },
             );
+            */
     }
-
     return(
         <div className="container py-5">
         <div className="row py-5">
