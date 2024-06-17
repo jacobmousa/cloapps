@@ -22,7 +22,7 @@ export default function Footer() {
                         <li>
                             <i className="fa fa-envelope fa-fw"></i>
                             <a className="text-decoration-none" href="mailto:info@company.com">
-                                info@cloapps.com
+                                jamesmoses7@gmail.com
                             </a>
                         </li>
                     </ul>
@@ -55,16 +55,16 @@ export default function Footer() {
                 <div className="col-auto me-auto">
                     <ul className="list-inline text-left footer-icons">
                         <li className="list-inline-item border border-light rounded-circle text-center">
-                            <a rel="nofollow" className="text-light text-decoration-none" target="_blank" href="http://fb.com/templatemo"><i className="fab fa-facebook-f fa-lg fa-fw"></i></a>
+                            <a rel="nofollow" className="text-light text-decoration-none" href="#"><i className="fab fa-facebook-f fa-lg fa-fw"></i></a>
                         </li>
                         <li className="list-inline-item border border-light rounded-circle text-center">
-                            <a className="text-light text-decoration-none" target="_blank" href="https://www.instagram.com/"><i className="fab fa-instagram fa-lg fa-fw"></i></a>
+                            <a className="text-light text-decoration-none" href="#"><i className="fab fa-instagram fa-lg fa-fw"></i></a>
                         </li>
                         <li className="list-inline-item border border-light rounded-circle text-center">
-                            <a className="text-light text-decoration-none" target="_blank" href="https://twitter.com/"><i className="fab fa-twitter fa-lg fa-fw"></i></a>
+                            <a className="text-light text-decoration-none"href="#"><i className="fab fa-twitter fa-lg fa-fw"></i></a>
                         </li>
                         <li className="list-inline-item border border-light rounded-circle text-center">
-                            <a className="text-light text-decoration-none" target="_blank" href="https://www.linkedin.com/"><i className="fab fa-linkedin fa-lg fa-fw"></i></a>
+                            <a className="text-light text-decoration-none" href="#"><i className="fab fa-linkedin fa-lg fa-fw"></i></a>
                         </li>
                     </ul>
                 </div>
