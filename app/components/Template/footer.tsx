@@ -3,7 +3,6 @@ export default function Footer() {
         <footer className="bg-dark" id="cloapps_footer">
         <div className="container">
             <div className="row">
-
                 <div className="col-md-4 pt-5">
                     <h2 className="h2 text-success border-bottom pb-3 border-light logo">
                     CloApps
@@ -11,18 +10,18 @@ export default function Footer() {
                     <ul className="list-unstyled text-light footer-link-list">
                         <li>
                             <i className="fas fa-map-marker-alt fa-fw"></i>
-                            abusnan sultan 193/1 24905
+                            Derech Ha&apos;atzmaut 45, Haifa
                         </li>
                         <li>
                             <i className="fa fa-phone fa-fw"></i>
                             <a className="text-decoration-none" href="tel:010-020-0340">
-                                972-52-5759236
+                                972-54-2879744
                             </a>
                         </li>
                         <li>
                             <i className="fa fa-envelope fa-fw"></i>
-                            <a className="text-decoration-none" href="mailto:info@company.com">
-                                jamesmoses7@gmail.com
+                            <a className="text-decoration-none" href="mailto:info@cloapps.com">
+                                info@cloapps.com
                             </a>
                         </li>
                     </ul>
@@ -83,8 +82,7 @@ export default function Footer() {
                 <div className="row pt-2">
                     <div className="col-12">
                         <p className="text-left text-light">
-                            Copyright © 2024 CloApps.com
-                            | Designed by <a rel="sponsored" href="https://templatemo.com/page/1" target="_blank">TemplateMo</a>
+                            Copyright © 2024-2025 CloApps.com
                         </p>
                     </div>
                 </div>
