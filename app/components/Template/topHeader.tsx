@@ -6,7 +6,7 @@ export default function TopHeader(){
                     <i className="fa fa-envelope mx-2"></i>
                     <a href="mailto:jamesmoses7@gmail.com" className="text-light fs-sm-1 navbar-brand">info@cloapps.com</a>
                     <i className="fa fa-phone mx-2"></i>
-                    <a href="tel:972-54-2879744" className="text-light fs-sm-1 navbar-brand">972-54-2879744</a>
+                    <a href="tel:972-52-5759236" className="text-light fs-sm-1 navbar-brand">972-52-5759236</a>
                 </div>
                 <div>
                     <div>

@@ -1,20 +1,23 @@
 [
-    { 
-        "name": "e-Commerce OS3", 
-        "title": "Dynamic Solid Performance", 
-        "description": "Our eCommerce platform, OS3, is dynamic and optimized for outstanding performance, ensuring a seamless and efficient shopping experience for users. Built with cutting-edge technology, OS3 delivers rapid load times and robust functionality to meet the demands of modern online retail.",
-        "image": "/images/eCommerce.jpg"
-    },
-    { 
-        "name": "Site Custom", 
-        "title": "Proffesional Site with CMS", 
-        "description": "A top-tier website equipped with a robust and user-friendly CMS for effortless content management. Enjoy features like responsive design, SEO-compatible architecture.",
-        "image": "/images/WebApplication.jpg"
-    },
-    { 
-        "name": "Mobile Apps", 
-        "title": "Custom Mobile App", 
-        "description": "Developing custom mobile apps tailored to your unique requirements, ensuring a solution that fits your needs. Our experienced team works closely with you to create user-friendly apps for iOS and Android that exceed your expectations." ,
-        "image": "/images/MobileApplication2.jpg"
-    }
-  ]
+  {
+    "name": "E-commerce OS3",
+    "title": "Dynamic, solid performance",
+    "description": "Bagisto Open Source–powered store with robust catalog, checkout, multi-store/multi-currency, and SEO-ready architecture.",
+    "image": "/images/eCommerce.jpg",
+    "alt": "E-commerce store built on Bagisto"
+  },
+  {
+    "name": "Starter Website",
+    "title": "Launch fast, mobile-friendly site",
+    "description": "Get an essential marketing site with responsive design, accessibility, and built-in SEO.",
+    "image": "/images/WebApplication.jpg",
+    "alt": "Starter website illustration"
+  },
+  {
+    "name": "Booking & Appointment",
+    "title": "Accept bookings and reduce no-shows",
+    "description": "Slots, reminders, payments and an admin dashboard to keep your schedule full.",
+    "image": "/images/MobileApplication2.jpg",
+    "alt": "Booking and appointment app"
+  }
+]

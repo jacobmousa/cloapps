@@ -1,3 +1,6 @@
+import Link from 'next/link';
+import NewsletterSubscribe from './NewsletterSubscribe';
+
 export default function Footer() {
     return(
         <footer className="bg-dark" id="cloapps_footer">
@@ -10,12 +13,12 @@ export default function Footer() {
                     <ul className="list-unstyled text-light footer-link-list">
                         <li>
                             <i className="fas fa-map-marker-alt fa-fw"></i>
-                            Derech Ha&apos;atzmaut 45, Haifa
+                            Shfaram, Wadi al-Malak 6
                         </li>
                         <li>
                             <i className="fa fa-phone fa-fw"></i>
                             <a className="text-decoration-none" href="tel:010-020-0340">
-                                972-54-2879744
+                                972-52-5759236
                             </a>
                         </li>
                         <li>
@@ -29,19 +32,21 @@ export default function Footer() {
 
                 <div className="col-md-4 pt-5">
                     <h2 className="h2 text-light border-bottom pb-3 border-light">Products</h2>
-                    <ul className="list-unstyled text-light footer-link-list">
-                        <li><a className="text-decoration-none" href="#">e-Commerce OS3</a></li>
-                        <li><a className="text-decoration-none" href="#">Site Pro</a></li>
-                    </ul>
+                        <ul className="list-unstyled">
+                        <li><Link className="text-decoration-none" href="/products#starter-website">Starter Website</Link></li>
+                        <li><Link className="text-decoration-none" href="/products#ecommerce">E‑commerce Store (Bagisto)</Link></li>
+                        <li><Link className="text-decoration-none" href="/products#booking-app">Booking & Appointment</Link></li>
+                        </ul>
+                        
+                        
                 </div>
 
                 <div className="col-md-4 pt-5">
                     <h2 className="h2 text-light border-bottom pb-3 border-light">Further Info</h2>
                     <ul className="list-unstyled text-light footer-link-list">
-                        <li><a className="text-decoration-none" href="#">Custom Web App</a></li>
-                        <li><a className="text-decoration-none" href="#">Mobile App</a></li>
-                        <li><a className="text-decoration-none" href="#">Shop Locations</a></li>
-                        <li><a className="text-decoration-none" href="#">Contact</a></li>
+                        <li><Link className="text-decoration-none" href="/services#web-app">Web Application</Link></li>
+                        <li><a className="text-decoration-none" href="/services#mobile-app">Mobile App</a></li>
+                        <li><a className="text-decoration-none" href="/contactus">Contact us</a></li>
                     </ul>
                 </div>
 
@@ -68,11 +73,15 @@ export default function Footer() {
                     </ul>
                 </div>
                 <div className="col-auto">
+
+                    <NewsletterSubscribe />
+                    {/*<!--
                     <label className="sr-only" htmlFor="subscribeEmail">Email address</label>
                     <div className="input-group mb-2">
                         <input type="text" className="form-control bg-dark border-light" id="subscribeEmail" placeholder="Email address" />
                         <div className="input-group-text btn-success text-light">Subscribe</div>
                     </div>
+                    -->*/}
                 </div>
             </div>
         </div>

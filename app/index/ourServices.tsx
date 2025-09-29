@@ -12,14 +12,14 @@ export default function OurServices(){
         </div>
         <div className="row">
             <div className="col-12 col-md-4 p-5 mt-3">
-                <a href="#">
+                <a href="/services#web-app">
                   <Image src="/images/WebApplication.jpg" alt="Web Application"  className="rounded-circle img-fluid border" width={330} height={330} />
                 </a>
                 <h5 className="text-center mt-3 mb-3">Web Application</h5>
                 {/*<p className="text-center"><a className="btn btn-success">Go Shop</a></p>*/}
             </div>
             <div className="col-12 col-md-4 p-5 mt-3">
-                <a href="#">
+                <a href="/services#mobile-app">
                     <Image src="/images/MobileApplication.jpg" alt="Mobile Application"  className="rounded-circle img-fluid border" width={330} height={330} />
                 </a>
                 <h2 className="h5 text-center mt-3 mb-3">Mobile Application</h2>
